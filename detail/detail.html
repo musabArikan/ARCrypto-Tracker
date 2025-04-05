@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>ARCrypto Detail</title>
+
+      <link
+         rel="stylesheet"
+         href="https://cdn3.devexpress.com/jslib/23.2.5/css/dx.material.blue.light.css"
+      />
+
+      <link
+         href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+         rel="stylesheet"
+         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+         crossorigin="anonymous"
+      />
+
+      <link rel="stylesheet" href="detail.css" />
+   </head>
+
+   <body>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+         <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html"><h2>ARCrypto</h2></a>
+            <button
+               class="navbar-toggler"
+               type="button"
+               data-bs-toggle="collapse"
+               data-bs-target="#navbarSupportedContent"
+               aria-controls="navbarSupportedContent"
+               aria-expanded="false"
+               aria-label="Toggle navigation"
+            >
+               <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+               <div id="searchMode"></div>
+            </div>
+         </div>
+      </nav>
+
+      <div class="container">
+         <div class="row">
+            <div class="col-12 col-lg-3 d-flex flex-column gap-2">
+               <div class="d-flex gap-1">
+                  <img src="" height="25px" id="coin_image" />
+                  <b id="coinName"></b>
+                  <span class="text-muted fw-bold" id="coinSymbol"></span>
+
+                  <span class="bg-muted fw-bold" id="coinRank"></span>
+               </div>
+               <h1 class="fw-bold" id="coinPrice"></h1>
+               <div class="d-flex col-12 justify-content-between price-range">
+                  <div id="coinRangeLow"></div>
+                  <div>24h Range</div>
+                  <div id="coinRangeHigh"></div>
+               </div>
+               <div class="d-flex flex-column border border-2 rounded p-3">
+                  <b class="text-muted">Holdings Value</b>
+                  <h5 class="fw-bold mb-0" id="holdingsValue"></h5>
+               </div>
+            </div>
+            <div
+               class="border-end border-1 d-none d-lg-inline-block h-100 col-1"
+            ></div>
+
+            <div class="col-12 col-lg-8 text-light">
+               <div id="coinChart"></div>
+            </div>
+         </div>
+         <div class="row mt-5 justify-content-lg-end justify-content-center">
+            <div class="col-8">
+               <div class="fw-bold mb-2">
+                  About <span id="descriptionCryptoName"></span>
+                  <span id="descriptionCryptoSymbol"></span>
+               </div>
+               <div class="text-muted" id="cryptoDescription"></div>
+            </div>
+         </div>
+      </div>
+
+      <script
+         src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+         crossorigin="anonymous"
+      ></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://cdn3.devexpress.com/jslib/23.2.5/js/dx.all.js"></script>
+      <script src="https://unpkg.com/devextreme-quill@1.6.4/dist/dx-quill.min.js"></script>
+      <script src="detail.js"></script>
+   </body>
+</html>

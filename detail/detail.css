@@ -1,0 +1,8 @@
+body {
+   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.price-range div {
+   font-size: 14px;
+   font-weight: 600;
+}
